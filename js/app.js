@@ -1,5 +1,5 @@
 
-(document => {
+const main = (document => {
     function createElement(tag, props, ...children) {
         const element = document.createElement(tag);
 
@@ -87,5 +87,7 @@
         todoItems.forEach(item => bindEvent(item));
     }
 
-    main();
+    return main();
 })(document);
+
+main();
